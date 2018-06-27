@@ -1,0 +1,114 @@
+.headingclass
+{
+
+    text-align: center;
+    color: green;
+     font-size: 2rem;
+    
+   
+}
+
+
+.text
+{
+ color: brown;
+ width: 40%;
+ font-size: 2em;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+img1{
+
+   float: left;
+    width: 25%;
+     margin-right: 15px;
+}
+img2{
+
+    float: right;
+     width: 25%;
+      margin-right: 15px;
+ }
+.ruleReview {
+    background-color: #ccc;
+    position: relative;
+    padding: 80px 20px 50px;
+}
+/* #displayimage{
+    
+
+    
+} */
+
+.heading1{
+    width: 65%;
+
+}
+.mainclass{
+    border: gray 2px solid;
+    margin: 50px 0px 100px 50px;
+    width: 50%;
+
+}
+img{
+    width: 15%;
+   
+    padding: 50px;
+
+}
+.screen {
+    animation:colorPulse 5s infinite ease-in-out;
+    background-image:radial-gradient(#444, #111);
+    box-shadow:0 0 5vmin 1vmin #000 inset;
+    box-sizing:border-box;
+    font-family:'Fira Mono', monospace;
+    font-size:20px;
+    height:40vh;
+    overflow:hidden;
+    width:50vw;
+  }
+  
+  .screen:before {
+    animation:wave 10s infinite ease-in-out;
+    content:"";
+    height:20vh;
+    left:0;
+    opacity:.5;
+    position:absolute;
+    right:0;
+    z-index:1;
+  }
+  
+  .screen:after {
+    background-image:linear-gradient(transparent, transparent 3px, #222);
+    background-size:4px 4px;
+    bottom:0;
+    content:"";
+    left:0;
+    pointer-events:none;
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:2;
+  }
+  
+  .imgtag
+  {
+      width:10%;
+
+  }
+  footer{
+      background: radial-gradient(#444, #111);
+      text-align: center;
+      font-size: 20px;
+      padding: 10px 0px 10px 10px;
+  }
+
+  #main-nav li{
+      color:white;
+      float:right;
+      margin:10px;
+      font-size:1.5em;
+      display:inline-block
+  }
