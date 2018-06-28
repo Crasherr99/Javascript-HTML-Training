@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+let gameobject={
+    gamename:"Assissain Creed",
+    version:"2.0",
+    data:" "
+};
+
+
+
+
+ let anotherobject={
+     gamename:"CounterStrike",
+    version:2.0,
+  
+
+ }
+// to check whether the object is empty or not;
+ if(isEmpty(gameobject) || isEmpty(anotherobject))
+ {
+     document.write("object is empty");
+ }else
+
+ {
+     document.write("object not empty");
+ }
+
+
+function isEmpty(obj)
+{
+    for(key in obj)
+    {
+        if(obj.hasOwnProperty(key))
+        {
+          
+            return false;
+        }else
+        {
+            return true;
+        }
+    }
+}
+// to check the key matches between the objects
+if(checkallkeys(gameobject,anotherobject)==true)
+{
+    document.write("object matched")
+}
+else
+{
+    document.write("object doen not match")
+}
+
+function checkallkeys(obj1,obj2)
+{
+ if(Object.keys(obj1).length===Object.keys(obj2).length)
+ {
+     return true;
+ }
+ else{
+     return false;
+ }   
+}
+</script>
+</body>
+</html>
+
+
