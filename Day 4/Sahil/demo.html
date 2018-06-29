@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="external.css">  
+
+<script>
+function startmoving()
+{ 
+    let outerdiv=document.getElementById("maindiv");
+    let innerdiv=document.getElementById("inner");
+    let num=1;
+    setInterval(function()
+    {
+
+        if(num>=100)
+        {
+          clearInterval();
+       }
+       else{
+           num++;
+           innerdiv.style.width=num+'%';
+           document.getElementById("myp").innerHTML=num+"% Loading";
+       }
+    },100)
+}
+
+
+
+
+</script>
+</head>
+<body>
+
+<div id="maindiv">
+    <div id="inner">
+    <p id="myp"
+    style="text-align: center">
+  <span id="percentage">
+
+</span>
+    </p> 
+</div>
+</div>
+<br>
+<div>
+    <button id="startbutton" onclick="startmoving();this.disabled='true'">Start Game</button>
+</div>
+
+
+    
+</body>
+</html>
